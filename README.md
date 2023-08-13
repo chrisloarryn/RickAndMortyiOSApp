@@ -2,7 +2,7 @@
 
 Full featured universal (iOS, macOS, iPadOS) app showcasing the Rick and Morty API.
 
-![Rick & Morty App: iOS Academy](https://raw.githubusercontent.com/chrisloarryn/RickAndMortyiOSApp/main/cover.png)
+![Rick & Morty App: iOS](https://raw.githubusercontent.com/chrisloarryn/RickAndMortyiOSApp/main/cover.png)
 
 ## Overview
 - Written in Swift
