@@ -104,11 +104,6 @@
 				497566F42A8895CB00E373A8 /* Managers */,
 				497566F32A88959F00E373A8 /* Resources */,
 				497566F22A88958D00E373A8 /* Controllers */,
-				497566C22A88931100E373A8 /* AppDelegate.swift */,
-				497566C42A88931100E373A8 /* SceneDelegate.swift */,
-				497566C62A88931100E373A8 /* ViewController.swift */,
-				497566CB2A88931200E373A8 /* Assets.xcassets */,
-				497566CD2A88931200E373A8 /* LaunchScreen.storyboard */,
 				497566D02A88931200E373A8 /* Info.plist */,
 			);
 			path = RickAndMorty;
@@ -134,6 +129,7 @@
 		497566F22A88958D00E373A8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				497566C62A88931100E373A8 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,6 +137,10 @@
 		497566F32A88959F00E373A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				497566CD2A88931200E373A8 /* LaunchScreen.storyboard */,
+				497566CB2A88931200E373A8 /* Assets.xcassets */,
+				497566C22A88931100E373A8 /* AppDelegate.swift */,
+				497566C42A88931100E373A8 /* SceneDelegate.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
