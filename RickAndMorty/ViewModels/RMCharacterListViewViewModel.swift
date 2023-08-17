@@ -72,9 +72,8 @@ final class RMCharacterListViewViewModel: NSObject {
             guard let strongSelf = self else {
                 return
             }
-            print("Printing more data")
             switch result {
-            case.success(let responseModel):
+            case .success(let responseModel):
                 let moreResults = responseModel.results
                 let info = responseModel.info
                 strongSelf.apiInfo = info
@@ -83,7 +82,6 @@ final class RMCharacterListViewViewModel: NSObject {
                 let newCount = moreResults.count
                 let total = originalCount + newCount
                 let startingIndex = total - newCount
-                
                 let indexPathsToAdd: [IndexPath] = Array(startingIndex..<(startingIndex + newCount)).compactMap({
                     return IndexPath(row: $0, section: 0)
                 })
@@ -91,7 +89,7 @@ final class RMCharacterListViewViewModel: NSObject {
                 strongSelf.characters.append(contentsOf: moreResults)
                 DispatchQueue.main.async {
                     strongSelf.delegate?.didLoadMoreCharacters(with: indexPathsToAdd)
-                    // strongSelf.isLoadingMoreCharacters = false
+                    strongSelf.isLoadingMoreCharacters = false
                 }
             case .failure(let failure):
                 print(String(describing: failure))
@@ -178,7 +176,6 @@ extension RMCharacterListViewViewModel: UIScrollViewDelegate {
             let offset = scrollView.contentOffset.y
             let totalContentHeight = scrollView.contentSize.height
             let totalScrollViewFixedHeight = scrollView.frame.size.height
-            
             if offset >= (totalContentHeight - totalScrollViewFixedHeight - 120) {
                 self?.fetchAdditionalCharacters(url: url)
             }
