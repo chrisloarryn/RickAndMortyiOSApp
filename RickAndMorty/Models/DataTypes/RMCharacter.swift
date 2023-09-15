@@ -2,7 +2,7 @@
 //  RMCharacter.swift
 //  RickAndMorty
 //
-//  Created by Cristóbal Contreras on 13-08-23.
+//  Created by Cristóbal Contreras on 12/22/22.
 //
 
 import Foundation

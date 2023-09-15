@@ -2,14 +2,16 @@
 //  RMLocation.swift
 //  RickAndMorty
 //
-//  Created by Cristóbal Contreras on 13-08-23.
+//  Created by Cristóbal Contreras on 12/22/22.
 //
 
 import Foundation
 
 struct RMLocation: Codable {
     let id: Int
-    let name, type, dimension: String
+    let name: String
+    let type: String
+    let dimension: String
     let residents: [String]
     let url: String
     let created: String
